@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Florista</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/products.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+ 
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-icon">❀</span>
+            <span class="logo-text">Florista</span>
+          </a>
+        </div>
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li><a href="index.html">Flowers</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="contact.html">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="#" class="icon-btn"><i class="fas fa-search"></i></a>
+          <a href="#" class="icon-btn cart-btn"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+          <a href="#" class="btn-primary btn-sm">Sign In</a>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ 
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Products</h1>
+      <p>Discover our full collection of fresh, hand-picked flowers and expertly crafted bouquets for every occasion.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span>Products</span>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-categories">
+          <button class="filter-btn active" data-filter="all">All Flowers</button>
+          <button class="filter-btn" data-filter="roses">Roses</button>
+          <button class="filter-btn" data-filter="bouquets">Bouquets</button>
+          <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+          <button class="filter-btn" data-filter="exotic">Exotic</button>
+          <button class="filter-btn" data-filter="gifts">Gift Sets</button>
+        </div>
+        <div class="filter-sort">
+          <label>Sort by:</label>
+          <select class="sort-select">
+            <option>Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest First</option>
+            <option>Best Selling</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="products-main">
+    <div class="container">
+      <div class="products-layout">
+        
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Price Range</h4>
+            <div class="price-range">
+              <input type="range" min="0" max="200" value="200" class="range-slider" id="priceRange" />
+              <div class="price-labels">
+                <span>$0</span>
+                <span id="priceVal">$200</span>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Flower Type</h4>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" checked /> Roses
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" checked /> Tulips
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" /> Lilies
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" /> Sunflowers
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" /> Orchids
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" /> Hydrangeas
+              </label>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Color</h4>
+            <div class="color-swatches">
+              <button class="swatch" style="background:#e8647a" title="Pink"></button>
+              <button class="swatch" style="background:#ff7043" title="Orange"></button>
+              <button class="swatch" style="background:#fff176" title="Yellow"></button>
+              <button class="swatch" style="background:#ffffff; border: 1px solid #ddd;" title="White"></button>
+              <button class="swatch" style="background:#ce93d8" title="Purple"></button>
+              <button class="swatch" style="background:#ef9a9a" title="Red"></button>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Occasion</h4>
+            <div class="checkbox-group">
+              <label class="checkbox-item"><input type="checkbox" /> Birthday</label>
+              <label class="checkbox-item"><input type="checkbox" /> Wedding</label>
+              <label class="checkbox-item"><input type="checkbox" /> Anniversary</label>
+              <label class="checkbox-item"><input type="checkbox" /> Sympathy</label>
+              <label class="checkbox-item"><input type="checkbox" /> Graduation</label>
+            </div>
+          </div>
+          <div class="sidebar-promo">
+            <p class="promo-tag">Special Offer</p>
+            <h3>Get 15% Off</h3>
+            <p>On orders over $75</p>
+            <a href="#" class="btn-primary btn-sm">Claim Now</a>
+          </div>
+        </aside>
+
+        
+        <div class="products-area">
+          <div class="products-header">
+            <p class="results-count">Showing <strong>24</strong> results</p>
+            <div class="view-toggle">
+              <button class="view-btn active" aria-label="Grid view"><i class="fas fa-th"></i></button>
+              <button class="view-btn" aria-label="List view"><i class="fas fa-list"></i></button>
+            </div>
+          </div>
+
+          <div class="all-products-grid">
+            
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/Garden Rose.jpg" alt="Garden Rose" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+                <span class="prod-badge new">New</span>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Roses</span>
+                <h3>Garden Rose Bundle</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span>(24)</span>
+                  </div>
+                  <span class="prod-price">$24.99</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/img2.jpg" alt="Peach Blossom" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Bouquets</span>
+                <h3>Peach Blossom Delight</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(18)</span>
+                  </div>
+                  <span class="prod-price">$32.99</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/Rosy Petal Dreams.jpg" alt="Rosy Petal" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+                <span class="prod-badge sale">-20%</span>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Seasonal</span>
+                <h3>Rosy Petal Dreams</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span>(31)</span>
+                  </div>
+                  <div class="prod-price-group">
+                    <span class="prod-price">$23.19</span>
+                    <span class="prod-old">$28.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/Sweet Pea Cream.jpg" alt="Sweet Pea" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Exotic</span>
+                <h3>Sweet Pea Cream</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span>(42)</span>
+                  </div>
+                  <span class="prod-price">$19.99</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/Hydrangea Bliss.jpg" alt="Hydrangea Bliss" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+                <span class="prod-badge new">New</span>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Bouquets</span>
+                <h3>Hydrangea Bliss</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(15)</span>
+                  </div>
+                  <span class="prod-price">$35.99</span>
+                </div>
+              </div>
+            </div>
+           
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/Rose Hip Bouquet.jpg" alt="Rose Hip" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Roses</span>
+                <h3>Rose Hip Bouquet</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span>(27)</span>
+                  </div>
+                  <span class="prod-price">$22.99</span>
+                </div>
+              </div>
+            </div>
+           
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/img3.jpg" alt="Vintage Rose" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Roses</span>
+                <h3>Vintage Rose Arrangement</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(53)</span>
+                  </div>
+                  <span class="prod-price">$45.00</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/img4.jpg" alt="Blush Bloom" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+                <span class="prod-badge sale">-15%</span>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Bouquets</span>
+                <h3>Blush Bloom Collection</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span>(38)</span>
+                  </div>
+                  <div class="prod-price-group">
+                    <span class="prod-price">$44.20</span>
+                    <span class="prod-old">$52.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/img5.jpg" alt="Peach Whisper" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Seasonal</span>
+                <h3>Peach Whisper Bouquet</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span>(19)</span>
+                  </div>
+                  <span class="prod-price">$38.00</span>
+                </div>
+              </div>
+            </div>
+           
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/img6.jpg" alt="Spring Melody" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Gifts</span>
+                <h3>Spring Melody Gift Set</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(61)</span>
+                  </div>
+                  <span class="prod-price">$41.00</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/img7.jpg" alt="Garden Charm" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Exotic</span>
+                <h3>Garden Charm Exotic</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span>(22)</span>
+                  </div>
+                  <span class="prod-price">$36.00</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="shop-product-card">
+              <div class="shop-product-img">
+                <img src="../images/img1.png" alt="Silk Dream" />
+                <div class="product-overlay">
+                  <button class="overlay-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                  <button class="overlay-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                  <button class="overlay-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                </div>
+                <span class="prod-badge new">New</span>
+              </div>
+              <div class="shop-product-info">
+                <span class="prod-category">Gifts</span>
+                <h3>Silk Dream Gift Box</h3>
+                <div class="prod-footer">
+                  <div class="prod-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(45)</span>
+                  </div>
+                  <span class="prod-price">$48.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn page-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo footer-logo">
+            <a href="index.html">
+              <span class="logo-icon">❀</span>
+              <span class="logo-text">Florista</span>
+            </a>
+          </div>
+          <p>Bringing the freshest flowers from garden to your door with love and elegance.</p>
+          <div class="app-badges">
+            <a href="#" class="app-badge"><i class="fab fa-google-play"></i> Google Play</a>
+            <a href="#" class="app-badge"><i class="fab fa-apple"></i> App Store</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Florista</h5>
+          <ul>
+            <li><a href="index.html">Flowers</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="contact.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Discover</h5>
+          <ul>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Payment Methods</h5>
+          <ul>
+            <li><a href="#"><i class="fab fa-cc-visa"></i> Visa Card</a></li>
+            <li><a href="#"><i class="fab fa-cc-mastercard"></i> Master Card</a></li>
+            <li><a href="#"><i class="fab fa-paypal"></i> PayPal</a></li>
+            <li><a href="#"><i class="fab fa-stripe-s"></i> Stripe Pay</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Florista. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

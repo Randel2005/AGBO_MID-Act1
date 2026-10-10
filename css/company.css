@@ -1,0 +1,411 @@
+.about-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.about-inner {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.about-images {
+  flex: 1;
+  position: relative;
+}
+
+.about-img-main {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 16px 48px var(--shadow-deep);
+}
+
+.about-img-main img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.about-img-side {
+  position: absolute;
+  bottom: -32px;
+  right: -32px;
+  width: 180px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 6px solid white;
+  box-shadow: 0 8px 24px var(--shadow-deep);
+}
+
+.about-img-side img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.about-badge-float {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background: var(--pink-primary);
+  color: white;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.badge-year {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.badge-num-lg {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.section-tag {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--pink-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-tag::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: var(--pink-primary);
+}
+
+.about-text {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 24px 0 32px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: var(--text-dark);
+}
+
+.highlight-item i {
+  color: var(--pink-primary);
+  font-size: 1rem;
+}
+
+/* Values Section */
+.values-section {
+  padding: 80px 0;
+  background: var(--off-white);
+}
+
+.values-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.value-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 16px var(--shadow);
+  transition: all var(--transition);
+  border-top: 3px solid transparent;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px var(--shadow);
+  border-top-color: var(--pink-primary);
+}
+
+.value-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--pink-light) 0%, var(--pink-pale) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pink-primary);
+  font-size: 1.4rem;
+  margin: 0 auto 20px;
+  transition: all var(--transition);
+}
+
+.value-card:hover .value-icon {
+  background: var(--pink-primary);
+  color: white;
+}
+
+.value-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.75;
+}
+
+
+.team-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.team-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 270px;
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-img {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.team-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-img img {
+  transform: scale(1.05);
+}
+
+.team-social {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  background: rgba(255,255,255,0.9);
+  transition: bottom var(--transition);
+}
+
+.team-card:hover .team-social {
+  bottom: 0;
+}
+
+.team-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--pink-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  transition: background var(--transition);
+}
+
+.team-social a:hover {
+  background: var(--pink-dark);
+}
+
+.team-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.team-info span {
+  font-size: 0.82rem;
+  color: var(--pink-primary);
+  font-weight: 500;
+}
+
+
+.partners-section {
+  padding: 80px 0;
+  background: var(--off-white);
+}
+
+.partners-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  text-align: center;
+  flex: 1;
+  min-width: 160px;
+  max-width: 200px;
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.partner-item:hover {
+  border-color: var(--pink-primary);
+  box-shadow: 0 8px 24px var(--shadow);
+  transform: translateY(-4px);
+}
+
+.partner-item i {
+  font-size: 2rem;
+  color: var(--pink-primary);
+  margin-bottom: 4px;
+}
+
+.partner-item span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.partner-item small {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+
+
+@media (max-width: 1024px) {
+  .about-inner {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-inner {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .about-images {
+    width: 100%;
+    padding-bottom: 32px;
+    padding-right: 32px;
+  }
+
+  .about-img-main img {
+    height: 300px;
+  }
+
+  .about-img-side {
+    width: 140px;
+    bottom: -16px;
+    right: -16px;
+  }
+
+  .about-badge-float {
+    top: -12px;
+    left: -12px;
+    width: 72px;
+    height: 72px;
+  }
+
+  .team-card {
+    min-width: calc(50% - 12px);
+    max-width: none;
+    flex: none;
+  }
+
+  .team-img img {
+    height: 240px;
+  }
+
+  .value-card {
+    min-width: calc(50% - 12px);
+    max-width: none;
+    flex: none;
+  }
+
+  .partner-item {
+    min-width: calc(50% - 10px);
+    max-width: none;
+    flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-card {
+    min-width: 100%;
+  }
+
+  .value-card {
+    min-width: 100%;
+  }
+
+  .partner-item {
+    min-width: calc(50% - 10px);
+  }
+
+  .about-badge-float {
+    display: none;
+  }
+}

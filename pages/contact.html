@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us & Contact - Florista</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-icon">❀</span>
+            <span class="logo-text">Florista</span>
+          </a>
+        </div>
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li><a href="index.html">Flowers</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="contact.html" class="active">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="#" class="icon-btn"><i class="fas fa-search"></i></a>
+          <a href="#" class="icon-btn cart-btn"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+          <a href="#" class="btn-primary btn-sm">Sign In</a>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Us & Contact</h1>
+      <p>We'd love to hear from you. Reach out for orders, partnerships, or just to say hello!</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span>About Us</span>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="contact-info-section">
+    <div class="container">
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Visit Our Store</h4>
+          <p>128 Blossom Lane, Garden District<br />New York, NY 10014</p>
+          <a href="#" class="contact-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+          <h4>Call Us</h4>
+          <p>Main: +1 (212) 555-0190<br />Orders: +1 (212) 555-0191</p>
+          <a href="tel:+12125550190" class="contact-link">Call Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h4>Email Us</h4>
+          <p>hello@florista.com<br />orders@florista.com</p>
+          <a href="mailto:hello@florista.com" class="contact-link">Send Email <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <h4>Store Hours</h4>
+          <p>Mon–Fri: 8am – 8pm<br />Sat–Sun: 9am – 6pm</p>
+          <span class="open-badge"><i class="fas fa-circle"></i> Open Now</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="contact-main-section">
+    <div class="container">
+      <div class="contact-layout">
+        
+        <div class="contact-form-wrap">
+          <div class="form-header">
+            <p class="section-tag">Send a Message</p>
+            <h2 class="section-title left-align">We'd Love to Hear From You</h2>
+            <p class="section-subtitle left-align">Whether it's a custom bouquet order, a question about delivery, or a partnership inquiry — we're here to help.</p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Emily" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Chen" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="emily@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (212) 555-0100" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a subject...</option>
+                <option>Custom Order</option>
+                <option>Delivery Inquiry</option>
+                <option>Partnership</option>
+                <option>Feedback</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        
+        <div class="contact-sidebar">
+          <div class="contact-sidebar-img">
+            <img src="../images/store.jpg" alt="Florista store" />
+          </div>
+          <div class="sidebar-contact-details">
+            <h3>Quick Contact</h3>
+            <ul class="contact-details-list">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>128 Blossom Lane, Garden District, New York, NY 10014</span>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <span>+1 (212) 555-0190</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>hello@florista.com</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon–Fri: 8am–8pm | Sat–Sun: 9am–6pm</span>
+              </li>
+            </ul>
+            <div class="contact-socials">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">✦ Frequently Asked Questions ✦</h2>
+        <p class="section-subtitle">Find answers to the most common questions about our flowers and services.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Do you offer same-day delivery?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes! We offer same-day delivery for orders placed before 2 PM in your local timezone. Orders placed after 2 PM will be delivered the next morning. Delivery is available 7 days a week.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Can I customize my bouquet?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely! Our expert florists love creating custom arrangements. Simply reach out via the contact form or call us, and we'll work with you to design the perfect bouquet for your needs.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>How do I care for my flowers?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Trim stems at an angle, place in clean water with the provided flower food, and keep away from direct sunlight. Change water every 2-3 days. Detailed care instructions are included with every order.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What is your return policy?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>We stand behind every bloom. If you're not fully satisfied with your order, contact us within 24 hours of delivery and we'll provide a full replacement or refund — no questions asked.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Do you deliver internationally?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Currently, we deliver across all 50 US states. International delivery is available to Canada, UK, and Australia. We're actively expanding to more countries — check our website for the latest updates.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Are your flowers sustainably sourced?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes! We partner exclusively with certified sustainable farms. Our flowers are grown using eco-friendly practices, and we use 100% recyclable packaging materials to minimize our environmental impact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo footer-logo">
+            <a href="index.html">
+              <span class="logo-icon">❀</span>
+              <span class="logo-text">Florista</span>
+            </a>
+          </div>
+          <p>Bringing the freshest flowers from garden to your door with love and elegance.</p>
+          <div class="app-badges">
+            <a href="#" class="app-badge"><i class="fab fa-google-play"></i> Google Play</a>
+            <a href="#" class="app-badge"><i class="fab fa-apple"></i> App Store</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Florista</h5>
+          <ul>
+            <li><a href="index.html">Flowers</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="contact.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Discover</h5>
+          <ul>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Payment Methods</h5>
+          <ul>
+            <li><a href="#"><i class="fab fa-cc-visa"></i> Visa Card</a></li>
+            <li><a href="#"><i class="fab fa-cc-mastercard"></i> Master Card</a></li>
+            <li><a href="#"><i class="fab fa-paypal"></i> PayPal</a></li>
+            <li><a href="#"><i class="fab fa-stripe-s"></i> Stripe Pay</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Florista. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
